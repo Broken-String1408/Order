@@ -10,10 +10,10 @@ public class Program {
 
     public static void main(String[] args) {
         Order order = new Order();
-        InputOrder inputOrder = new InputOrder();
-        SaveOrder saveOrder = new SaveOrder();
-       inputOrder.inputFromConsole(order);
-       saveOrder.saveToJson(order);
+        UserInput inputOrder = new InputOrder();
+        Savable saveOrder = new SaveOrder();
+       inputOrder.orderInput(order);
+       saveOrder.saveOrder(order);
 
     }
 

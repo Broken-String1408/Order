@@ -3,13 +3,13 @@ package ru.geekbrains.oop.lesson6.srp2;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class SaveOrder {
+public class SaveOrder implements Savable{
 
 
 
-
-    public void saveToJson(Order order) {
-        String fileName = "order.json";
+    @Override
+    public void saveOrder(Order order) {
+        String fileName = System.currentTimeMillis() + ".json";
         try (FileWriter writer = new FileWriter(fileName, false)) {
             writer.write("{\n");
             writer.write("\"clientName\":\""+ order.getClientName() + "\",\n");
