@@ -1,4 +1,4 @@
-package ru.geekbrains.oop.lesson6.srp2;
+package ru.geekbrains.oop.lesson6.srp2.model;
 
 import java.io.FileWriter;
 import java.io.IOException;

@@ -1,9 +1,12 @@
-package ru.geekbrains.oop.lesson6.srp2;
+package ru.geekbrains.oop.lesson6.srp2.model;
+
+import ru.geekbrains.oop.lesson6.srp2.model.Order;
+import ru.geekbrains.oop.lesson6.srp2.presenter.Savable;
 
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class SaveOrder implements Savable{
+public class SaveOrder implements Savable {
 
 
 

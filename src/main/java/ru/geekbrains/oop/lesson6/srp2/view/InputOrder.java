@@ -1,8 +1,11 @@
-package ru.geekbrains.oop.lesson6.srp2;
+package ru.geekbrains.oop.lesson6.srp2.view;
+
+import ru.geekbrains.oop.lesson6.srp2.model.Order;
+import ru.geekbrains.oop.lesson6.srp2.presenter.UserInput;
 
 import java.util.Scanner;
 
-public class InputOrder implements UserInput{
+public class InputOrder implements UserInput {
 
     private Scanner scanner = new Scanner(System.in);
 

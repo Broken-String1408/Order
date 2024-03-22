@@ -1,5 +1,12 @@
 package ru.geekbrains.oop.lesson6.srp2;
 
+import ru.geekbrains.oop.lesson6.srp2.model.Order;
+import ru.geekbrains.oop.lesson6.srp2.model.SaveOrder;
+import ru.geekbrains.oop.lesson6.srp2.presenter.OrderPresenter;
+import ru.geekbrains.oop.lesson6.srp2.presenter.Savable;
+import ru.geekbrains.oop.lesson6.srp2.presenter.UserInput;
+import ru.geekbrains.oop.lesson6.srp2.view.InputOrder;
+
 public class Program {
 
     /**
@@ -9,11 +16,8 @@ public class Program {
      */
 
     public static void main(String[] args) {
-        Order order = new Order();
-        UserInput inputOrder = new InputOrder();
-        Savable saveOrder = new SaveOrder();
-       inputOrder.orderInput(order);
-       saveOrder.saveOrder(order);
+        OrderPresenter orderPresenter = new OrderPresenter(new InputOrder(), new SaveOrder());
+        orderPresenter.getUserInputAndSave();
 
     }
 
